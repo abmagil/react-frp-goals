@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
-import FrpTable from './FrpTable';
-import FrpGoalRow from './FrpGoalRow';
+import GoalsTable from './GoalsTable';
+import Goal from './Goal';
 
 const {
   arrayOf,
@@ -11,16 +11,16 @@ const {
  } = PropTypes;
 
 const GoalList = ({ orderedGoals, onUpClick, onDownClick }) => (
-  <FrpTable>
+  <GoalsTable>
     {orderedGoals.map((goal) => (
-      <FrpGoalRow
+      <Goal
         goal={goal}
         key={goal.id}
         onUpClick={() => onUpClick(goal.id)}
         onDownClick={() => onDownClick(goal.id)} />
       )
     )}
-  </FrpTable>
+  </GoalsTable>
 )
 
 GoalList.propTypes = {

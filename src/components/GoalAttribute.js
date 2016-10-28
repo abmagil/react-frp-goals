@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-const FrpGoalAttribute = ({ isLocked, value, updateHandler }) => {
+const GoalAttribute = ({ isLocked, value, updateHandler }) => {
   return <td>
     {isLocked
       ? <p>{value}</p>
@@ -10,7 +10,7 @@ const FrpGoalAttribute = ({ isLocked, value, updateHandler }) => {
     }
   </td>
 }
-FrpGoalAttribute.propTypes = {
+GoalAttribute.propTypes = {
   goalID: PropTypes.number.isRequired,
   isLocked: PropTypes.bool.isRequired,
   attrName: PropTypes.string.isRequired,
@@ -18,4 +18,4 @@ FrpGoalAttribute.propTypes = {
   updateHandler: PropTypes.func.isRequired
 }
 
-export default FrpGoalAttribute
+export default GoalAttribute

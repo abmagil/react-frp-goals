@@ -1,10 +1,10 @@
 import { mount, shallow } from 'enzyme';
-import FrpTable from './FrpTable';
+import GoalsTable from './GoalsTable';
 import React from 'react';
 import expect from 'expect';
 
 function setup() {
-  const wrapper = shallow(<FrpTable />);
+  const wrapper = shallow(<GoalsTable />);
 
   return {
     wrapper
@@ -12,7 +12,7 @@ function setup() {
 }
 
 describe('components', () => {
-  describe('<FrpTable />', () => {
+  describe('<GoalsTable />', () => {
     it('should render a table', () => {
       const { wrapper } = setup();
 

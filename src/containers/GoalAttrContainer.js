@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux'
 
 import { updateGoal } from '../actions/goal';
-import FrpGoalAttribute from '../components/FrpGoalAttribute';
+import GoalAttribute from '../components/GoalAttribute';
 
 const mapStateToProps = (state, ownProps) => {
   const { goalID, attrName } = ownProps;
@@ -32,4 +32,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(FrpGoalAttribute);
+export default connect(mapStateToProps, mapDispatchToProps)(GoalAttribute);

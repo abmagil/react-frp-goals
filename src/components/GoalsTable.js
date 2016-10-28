@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import cdf from '../../cdf';
 import sum from 'lodash/sum';
 
-const FrpTable = ({ children }) => (
+const GoalsTable = ({ children }) => (
   <table>
     <thead>
       <tr>
@@ -28,8 +28,8 @@ const FrpTable = ({ children }) => (
   </table>
 )
 
-FrpTable.propTypes = {
+GoalsTable.propTypes = {
   children: PropTypes.node
 }
 
-export default FrpTable;
+export default GoalsTable;

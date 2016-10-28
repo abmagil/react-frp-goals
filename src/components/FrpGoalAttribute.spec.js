@@ -1,5 +1,5 @@
 import { mount, shallow } from 'enzyme';
-import FrpGoalAttribute from './FrpGoalAttribute';
+import GoalAttribute from './GoalAttribute';
 import React from 'react';
 import expect from 'expect';
 
@@ -11,7 +11,7 @@ function setup() {
     goalID: 1,
     onGoalAttrChange: () => {}
   };
-  const wrapper = shallow(<FrpGoalAttribute {...props} />);
+  const wrapper = shallow(<GoalAttribute {...props} />);
 
   return {
     wrapper
@@ -19,7 +19,7 @@ function setup() {
 }
 
 describe('components', () => {
-  describe('<FrpGoalAttribute />', () => {
+  describe('<GoalAttribute />', () => {
     it('renders a <p> when attribute is locked', () => {
       const { wrapper } = setup();
       console.log(wrapper.text())

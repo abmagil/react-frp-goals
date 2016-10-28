@@ -2,8 +2,8 @@ import React from 'react'
 
 import GoalAttrContainer from '../containers/GoalAttrContainer';
 
-const FrpGoalRow = ({ goal, onUpClick, onDownClick }) => {
-  return <tr>
+const Goal = ({ goal, onUpClick, onDownClick }) => (
+  <tr>
     <td>
       {goal.type}
     </td>
@@ -19,6 +19,6 @@ const FrpGoalRow = ({ goal, onUpClick, onDownClick }) => {
       </button>
     </td>
   </tr>
-}
+)
 
-export default FrpGoalRow;
+export default Goal;
