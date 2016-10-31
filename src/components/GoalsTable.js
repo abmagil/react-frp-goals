@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import cdf from '../../cdf';
+import cdf from '../../src/utils/cdf';
 import sum from 'lodash/sum';
 
 const GoalsTable = ({ children }) => (

@@ -21,8 +21,10 @@
   },
   "devDependencies": {
     "enzyme": "^2.5.1",
+    "lolex": "^1.5.1",
     "nwb": "0.12.x",
-    "react-addons-test-utils": "^15.3.2"
+    "react-addons-test-utils": "^15.3.2",
+    "sinon": "^1.17.6"
   },
   "author": "",
   "license": "MIT",

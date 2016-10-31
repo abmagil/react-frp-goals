@@ -1,4 +1,4 @@
-import cdf from '../cdf';
+import cdf from './cdf';
 import expect from 'expect';
 
 describe('CDF function', () => {
