@@ -13,16 +13,13 @@ function setup() {
   };
   const wrapper = shallow(<GoalAttribute {...props} />);
 
-  return {
-    wrapper
-  }
+  return { wrapper }
 }
 
 describe('components', () => {
   describe('<GoalAttribute />', () => {
     it('renders a <p> when attribute is locked', () => {
       const { wrapper } = setup();
-      console.log(wrapper.text())
 
       expect(wrapper.find('p').length).toBe(1);
       expect(wrapper.find('p').text()).toBe('2000');
