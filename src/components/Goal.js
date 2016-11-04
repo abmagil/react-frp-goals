@@ -9,7 +9,7 @@ const Goal = ({ goal, onUpClick, onDownClick }) => (
     </td>
     <GoalAttrContainer attrName={"total"} goalID={goal.id} />
     <GoalAttrContainer attrName={"deadline"} goalID={goal.id} />
-    <GoalAttrContainer attrName={"outlay"} goalID={goal.id} />
+    <GoalAttrContainer attrName={"spendingPerMonth"} goalID={goal.id} />
     <td>
       <button onClick={onUpClick}>
         Up

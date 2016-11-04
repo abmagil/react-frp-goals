@@ -1,3 +1,6 @@
+import moment from 'moment';
+
+window.moment = moment;
 // Calculates distance to the end of given year
 function monthsBetween(deadlineDate, inceptionDate) {
   let months;
@@ -23,8 +26,12 @@ function spendingPerMonth({ goalTotal, deadlineDate, startingDate=new Date() }) 
 };
 
 // Built in assumption that answer is "in year XXXX", i.e. by the end of XXXX
-function monthsOfSpending({ goalTotal, monthlyOutlay }) {
-  return Math.ceil(goalTotal / monthlyOutlay); 
+function monthsOfSpending({ total: goalTotal, spendingPerMonth: monthlyOutlay, startingDate }) {
+  const calculatedMonths = Math.ceil(goalTotal / monthlyOutlay);
+  console.log("goalTotal", goalTotal)
+  console.log("monthlyOutlay", monthlyOutlay)
+  console.log("calculatedMonths", calculatedMonths)
+  return moment(startingDate).add(calculatedMonths, 'M');
 };
 
 export default {

@@ -12,7 +12,7 @@ describe('reducers', () => {
     it('should concatenate goals on ADD_GOAL action', () => {
       expect(order([1, 2, 3], {
         type: `${actions.ADD_GOAL}`, goal: {
-          id: 1337, type: 'Emergency Goal', total: 100, deadline: 1999, outlay: 15
+          id: 1337, type: 'Emergency Goal', total: 100, deadline: 1999, spendingPerMonth: 15
         }
       })).toEqual([1, 2, 3, 1337])
     })

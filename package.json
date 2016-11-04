@@ -14,6 +14,7 @@
   "dependencies": {
     "aphrodite": "^0.6.0",
     "lodash": "^4.16.4",
+    "moment": "^2.15.2",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
@@ -21,10 +22,8 @@
   },
   "devDependencies": {
     "enzyme": "^2.5.1",
-    "lolex": "^1.5.1",
     "nwb": "0.12.x",
-    "react-addons-test-utils": "^15.3.2",
-    "sinon": "^1.17.6"
+    "react-addons-test-utils": "^15.3.2"
   },
   "author": "",
   "license": "MIT",

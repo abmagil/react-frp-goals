@@ -28,7 +28,7 @@ GoalList.propTypes = {
     id: number.isRequired,
     total: number.isRequired,
     deadline: number.isRequired,
-    outlay: number.isRequired
+    spendingPerMonth: number.isRequired
   })).isRequired,
   onUpClick: func.isRequired,
   onDownClick: func.isRequired
